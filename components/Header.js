@@ -51,7 +51,15 @@ const Header = () => {
 
       {/* right */}
       <div className="flex items-center sm:space-x-2 justify-end">
-        <p className="whitespace-nowrap font-semibold pr-3"> User</p>
+        <Image
+          className="rounded-full cursor-pointer"
+          src={session.user.image}
+          width={40}
+          height={40}
+        />
+        <p className="whitespace-nowrap font-semibold px-3 flex items-center">
+          {session.user.name}
+        </p>
         <ViewGridIcon className="icon" />
         <ChatIcon className="icon" />
         <BellIcon className="icon" />
