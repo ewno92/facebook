@@ -9,12 +9,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>Facebook</h1>
-
       <main>
         <Header />
         {/* sidebar */}
         {/* main */}
+        <h1>Facebook</h1>
       </main>
     </div>
   );
