@@ -18,8 +18,11 @@ import {
   ShoppingCartIcon,
 } from "@heroicons/react/outline";
 import HeaderIcon from "./HeaderIcon";
+import { useSession } from "next-auth/client";
 
 const Header = () => {
+  const [session] = useSession();
+  console.log(session);
   return (
     <div className="sticky top-0 z-50 bg-white flex items-center p-2 lg:px-5 shadow-md ">
       <div className="flex items-center">
