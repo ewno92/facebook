@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Logo from "../public/logo.png";
+import { signOut } from "next-auth/client";
 
 import {
   BellIcon,
@@ -52,6 +53,7 @@ const Header = () => {
       {/* right */}
       <div className="flex items-center sm:space-x-2 justify-end">
         <Image
+          onClick={signOut}
           className="rounded-full cursor-pointer"
           src={session.user.image}
           width={40}

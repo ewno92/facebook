@@ -8,7 +8,7 @@ import Sidebar from "../components/Sidebar";
 export default function Home({ session }) {
   if (!session) return <Login />;
   return (
-    <div className="">
+    <div className="bg-gray-100">
       <Head>
         <title>Facebok</title>
         <link rel="icon" href="/favicon.ico" />
@@ -16,7 +16,6 @@ export default function Home({ session }) {
 
       <Header />
       <main className="flex">
-        {/* sidebar */}
         <Sidebar />
         {/* main */}
         <Feed />
